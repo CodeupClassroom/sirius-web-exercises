@@ -205,7 +205,7 @@ but should provide a rough outline of the class pacing.
 | (09) 01/17 | JavaScript I Continued     |
 | (10) 01/24 | jQuery                     |
 | (11) 01/31 |                            |
-| (12) 02/07 | JavaScript I               |
+| (12) 02/07 | JavaScript II              |
 | (13) 02/14 | Java I                     |
 | (14) 02/21 | Java II                    |
 | (15) 02/28 |                            |
