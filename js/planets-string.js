@@ -2,7 +2,7 @@
     "use strict";
 
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray;
+    var planetsArray = planetsString.split("|")
 
     /**
      * TODO:
@@ -11,7 +11,7 @@
      * console.log planetsArray to check your work
      */
 
-    // console.log(planetsArray);
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -23,5 +23,25 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
+
+    const planetWithBreakTags = planetsArray.join("<br>")
+
+
+    // <ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>
+
+    console.log(planetWithBreakTags)
+
+    let planetsList = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>";
+
+
+
+    // planetsList = "<ul><li>" + planetsList + "</li></ul>";
+
+    console.log("reference", "<ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>")
+    console.log(planetsList)
+
+
+    document.getElementsByTagName('body')[0].innerHTML += planetsList
+    document.getElementsByTagName('body')[0].innerHTML += planetWithBreakTags
 
 })();
