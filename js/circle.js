@@ -41,9 +41,9 @@
     //
     // }
     //
-    // function isValidNumber(input){
-    //     return typeof input === "number" || !isNaN(input)
-    // }
+    function isValidNumber(input){
+        return !isNaN(input)
+    }
 
     // console.log(multiply("3", 4));
 
