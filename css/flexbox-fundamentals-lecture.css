@@ -1,0 +1,38 @@
+.container{
+    height: 450px;
+    width: 650px;
+    border: 3px solid #D64933;
+    /*margin: 20px;*/
+    /*padding: 10px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*overflow: scroll;*/
+}
+
+.box{
+    height: 75px;
+    width: 175px;
+    border: 1px solid darkred;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    /*flex-grow: 4;*/
+}
+#one {
+    /*flex-shrink: 2;*/
+    /*align-self: flex-start;*/
+
+}
+#two{
+    /*width: 160px;*/
+    /*position: relative;*/
+    /*top: 200px;*/
+}
+
+#three{
+    /*flex-grow: 5;*/
+    /*margin-right: 60px*/
+}

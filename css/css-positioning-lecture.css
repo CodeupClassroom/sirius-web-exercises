@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: teal;
+}
+.box {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 100px;
+    border: 9px solid white;
+    margin: 45px;
+    display: inline-block;
+    border: 2px solid red;
+}
+
+#outer {
+    display: inline-block;
+    border: 2px solid red;
+}
+
+#uno {
+    /*display: inline-block;*/
+}
+
+#one {
+    /*position: relative;*/
+    /*left: 300px;*/
+    /*margin-left: 300px;*/
+    /*width: 50%;*/
+    /*margin: 0;*/
+    /*float: left;*/
+}
+
+p{
+    /*display: inline-block;*/
+    /*clear: left;*/
+}
+
+h6 {
+    /*margin-bottom: 0;*/
+    /*margin-top: 125px;*/
+    /*color: red;*/
+}
+
+#two {
+    /*position: relative;*/
+    /*top: 45px;*/
+    /*left: 300px;*/
+    /*float: left;*/
+}
+
+
+#three {
+    /*position: fixed;*/
+    /*bottom: 500px;*/
+}
+
+#four {
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*margin-top: 100px;*/
+}
+
+#a {
+    background-color: thistle;
+    height: 50px;
+    /*width: 20%;*/
+}
+
+#b {
+    background-color: thistle;
+    height: 50px;
+    /*width: 40%;*/
+}
+
+#c {
+    background-color: thistle;
+    height: 50px;
+    /*width: 70%;*/
+}
+
+#d {
+    background-color: thistle;
+    height: 50px;
+    /*width: 90%;*/
+}
+
+#five {
+    /*border-radius: 50%;*/
+    /*position: relative;*/
+    /*margin-top: 100px;*/
+}
