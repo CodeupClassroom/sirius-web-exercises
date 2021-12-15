@@ -1,0 +1,155 @@
+#orange {
+    color: orange;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h1 {
+    color: darkred;
+    font-family: 'Redacted Script', cursive;
+}
+.border {
+    border: 3px solid red;
+}
+
+/*  1. identify the element you want to style */
+/* tag name - will get applied to ALL of that tag*/
+p {
+    color: green;
+    background-color: lavender;
+    border:  2px dotted darkred;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: "Times New Roman", serif;
+}
+
+/*a {*/
+/*    !*text-decoration: none;*!*/
+/*}*/
+
+/*ul li {*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*ul li a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+div {
+    color: magenta;
+}
+
+/* .classValue -  apply to all elements with that class name */
+
+.purple {
+    color: purple;
+}
+
+/* #idValue -  applied to only the element with that unique id value*/
+
+#title {
+    color: mediumvioletred;
+}
+
+/* SYNTAX */
+
+/*selector {*/
+/*!*    apply css styling here *!*/
+/*    property: value;*/
+/*    property: value;*/
+/*    property: value;*/
+/*}*/
+
+/* this comment
+cann be
+on multiple lines
+ */
+
+
+.upper {
+    text-transform: uppercase;
+}
+
+#purple-bg {
+    background-color: purple;
+}
+
+.animals {
+    border: 3px solid black;
+}
+
+ul {
+    border: 1px solid blue;
+    margin: 5px;
+}
+
+ul a{
+    color: magenta;
+}
+
+#unique-ul * {
+    color: #F0803C;
+}
+
+.animals ul p {
+    color: black;
+    border: none;
+    background-color: unset;
+
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+.class-heading {
+    color: deeppink;
+}
+
+/*#id-heading {*/
+/*    color: green;*/
+/*}*/
+
+h3 {
+    color: #000fff;
+}
+
+.other-class {
+    color: rgb(74, 16, 182);
+    background-color: rgba(74, 16, 182, 0.6);
+    border: 3px solid black;
+    border-radius: 18px;
+}
+
+h3:hover {
+    background-color: orangered;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
