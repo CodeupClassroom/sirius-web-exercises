@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--<form method="POST" action="https://request-inspector.glitch.me/">-->
+
+<!--    <label for="username">Username</label>-->
+<!--    <input id="username" name="username" type="text">-->
+<!--    <br>-->
+
+<!--    <label for="password">Password</label>-->
+<!--    <input id="password" name="password" type="password">-->
+<!--    <br>-->
+
+<!--    <input type="submit">-->
+<!--</form>-->
+<!--q=how+to+make+lemonade+without+sugar-->
+
+<!--https://www.google.com/search?q=phone&source=hp&ei=YymyYdi-NsyxqtsPn8O5iA0&iflsig=ALs-wAMAAAAAYbI3cy3I_o-258j8_-30EsQuaRsShlJL&ved=0ahUKEwiY_MHAjNf0AhXMmGoFHZ9hDtEQ4dUDCAk&uact=5&oq=phone&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBAgAEEMyBAgAEEMyCAgAEIAEEMkDMgUIABCSAzIFCAAQkgMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBQgAEIAEOgcILhCxAxBDOgsIABCABBCxAxDJAzoICC4QgAQQsQM6CwguEIAEEMcBEKMCOg4ILhCABBCxAxDHARCjAjoOCC4QgAQQsQMQxwEQ0QM6CAgAELEDEJECOgUIABCRAjoKCC4QxwEQ0QMQQ1DDtgFYzLoBYMu9AWgBcAB4AIABXogB1wOSAQE2mAEAoAEBwAEB&sclient=gws-wiz-->
+
+<!--<form action="https://google.com" method="GET">-->
+<!--    <input type="text" name="q">-->
+<!--    <input type="submit" value="Google Search">-->
+<!--</form>-->
+
+<h1>Sign-up</h1>
+
+<form method="POST" action="https://request-inspector.glitch.me/">
+
+    <label for="username">Username</label>
+    <input id="username" name="username" value="bob" type="text">
+    <br>
+
+    <label for="birthday">Birthday</label>
+    <input value="2023-02-21" name="birthday" id="birthday" type="date">
+    <br>
+
+
+
+    <label for="bio">Bio</label>
+    <br>
+    <textarea disabled placeholder="Your bio here." maxlength="244" name="bio" id="bio" cols="30" rows="10">hello world</textarea>
+    <br>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password">
+    <br>
+
+    <label for="ValidatePassword">Confirm Password</label>
+    <input id="ValidatePassword" name="ValidatePassword" type="password">
+    <br>
+
+    <label for="">Gender</label>
+    <br>
+    <input type="radio" name="gender" value="male"> Male
+    <br>
+    <input type="radio" name="gender" value="female"> Female
+    <br>
+    <input type="radio" name="gender" value="other"> Other
+    <input type="text" name="other_gender">
+    <br>
+
+    <label for="hobbies">Your Hobbies</label>
+    <select disabled  name="hobbies" id="hobbies">
+        <option disabled value="stampCollectors">stampCollectors</option>
+        <option value="funkoPopCollectors">FunkoPopCollectors</option>>
+        <option value="legoMiniFigures">legoMiniFiguresCollecting</option>
+    </select>
+
+    <br>
+
+    <label for="lego">lego</label>
+    <input disabled type="checkbox" name="hobbies" value="lego" id="lego">
+    <br>
+    <label for="funko">funkko</label>
+    <input type="checkbox" name="hobbies" value="funko" id="funko">
+    <br>
+    <label for="stamp">stamp</label>
+    <input type="checkbox" name="hobbies" checked value="stamp" id="stamp">
+    <br>
+
+
+    <input type="hidden" name="referred" value="GoogleJobs">
+
+
+
+    <label for="emailSubscription">would you like to sign up for email sub.</label>
+    <input type="checkbox" name="emailSubscription" id="emailSubscription">
+    <br>
+
+    <input type="submit">
+</form>
+
+</body>
+</html>
