@@ -1,0 +1,86 @@
+#logo {
+    height: 100px;
+}
+
+header {
+    display: flex;
+    color: red;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+body {
+    background-color: #F0803C;
+}
+
+
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    padding: 8px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    padding: 0 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/*@media screen and (min-width: 300px) { !* 300px wide and bigger *!*/
+/*    body {*/
+/*        background-color: deeppink;*/
+/*    }*/
+
+/*    button {*/
+/*        background-color: #D64933;*/
+/*        color: white;*/
+/*        font-size: 30px;*/
+/*    }*/
+/*}*/
+
+
+/*!* range of screen size*!*/
+
+@media screen and (min-width: 426px) and (max-width: 768px){ /* between 300px and 600px wide */
+    body {
+        background-color: deeppink;
+    }
+
+    button {
+        background-color: #D64933;
+        color: white;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 425px){ /* max-width  -- anything smaller than size given*/
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li a {
+        border: 2px solid red;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+}
+
