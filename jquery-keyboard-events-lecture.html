@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Keyboard Events Lecture</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <style>
-        body {
-            min-height: 2000px;
-        }
+        body {min-height: 2000px;}
     </style>
-
 </head>
-
 <body>
-
-<main class="container">
-
-    <h1 id="someHeader">Keyboard Events Lecture</h1>
-
+<main>
+    <h1 id="some-header">Keyboard Events Lecture</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid blanditiis delectus enim est itaque molestiae necessitatibus pariatur quo, rerum sunt tempore temporibus unde ut vel. Eaque necessitatibus quos temporibus.</p>
-
+    <input id="input-example" type="text">
 </main>
-
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 <script>
 
     $(document).ready(function() {
 
         "use strict";
 
-        // key events fired in the following order: keydown->keypress->keyup
+        // !! key events fired in the following order: keydown->keypress->keyup !!
 
-        // keydown
+        // ===== keydown
 
             // recognizes all keyboard keys when they are pushed down
             // repeats as key is held down
@@ -51,7 +33,7 @@
             // });
 
 
-        // keypress
+        // ===== keypress
 
             // recognizes the character that is typed
             // only recognizes keys that can have a typed output
@@ -61,7 +43,7 @@
             // });
 
 
-        // keyup
+        // ===== keyup
 
             // recognizes all keyboard keys when they are pushed down
             // recognizes all keyboard keys when they are released
@@ -71,8 +53,42 @@
             //     console.log("Key up");
             // });
 
+            // keyboard events listeners can be bound to specific DOM elements
 
-        // on
+            // $('#input-example').keyup(function(e) {
+            //     console.log('From input element: ' + $(e.target).val());
+            // });
+
+        /*
+
+            Question 1:
+
+            A keyup event will repeat while a key is held down
+
+            A) True
+            B) False
+
+
+            Question 2:
+
+            A keypress event will not fire when the arrow keys are pressed.
+
+            A) True
+            B) False
+
+
+            Question 3:
+
+            Keydown, keypress and keyup event listeners are bound to the document. When a key is typed, all
+            events will fire simultaneously.
+
+            A) True
+            B) False
+
+         */
+
+
+        // ===== on
 
         // https://stackoverflow.com/questions/9122078/difference-between-onclick-vs-click
         // https://www.pdiniz.com/why-you-should-always-use-jquerys-onclick-instead-of-click/
@@ -83,35 +99,64 @@
             //     console.log('h1 clicked');
             // });
 
-            $(document).on("keydown", function() {
-                console.log('key down event');
-            });
+            // $('main').on('click', 'h1', function() {
+            //     console.log('h1 clicked');
+            // });
+            //
+            // $('main').append('<h1>Another h1</h1>');
+
+            // $(document).on("keydown", function() {
+            //     console.log('key down event');
+            // });
 
 
-        // off
+
+        // ===== off
 
             // removes all events from a selector or a specific event/selector/handler
 
-            $(document).off("keydown");
+            // $(document).off("keydown");
 
 
-        // preventDefault()
+        // ===== preventDefault()
 
-            $(document).keydown(function(e) {
-                if (e.originalEvent.code === "Space") {
-                    e.preventDefault();
-                }
-            });
+            // $(document).keydown(function(e) {
+            //     console.log(e.key);
+            //     if (e.key === " ") {
+            //         e.preventDefault();
+            //     }
+            // });
 
 
-        // konami code!
+        /*
 
-            // http://digg.com/
+            Question 1:
+
+            Why is the .on() method preferred over the more specific event methods?
+
+            A) Events can still be fired for dynamically added elements
+            B) Events can be removed from an element
+            C) The .on method can save more memory in applying one handler rather than many to a group of elements
+            D) A and C
+            E) A, B and C
+
+            Question 2:
+
+            The event object can be used for:
+
+            A) Preventing default behavior
+            B) Obtaining information about what key was typed
+            C) All of the above
+            D) None of the above
+
+         */
+
+        // ===== konami code!
+
+            // https://www.goskills.com/
 
     });
 
 </script>
-
 </body>
-
 </html>
