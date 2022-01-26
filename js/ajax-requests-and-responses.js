@@ -182,3 +182,68 @@ $.ajax("https://dog.ceo/api/breeds/imge/random") // SENDS A GET REQUEST
 // $.ajax(url, options)
 
 
+
+// ⭐️ MORE AJAX ⭐
+
+// -- posts https://jsonplaceholder.typicode.com/comments
+
+// ✅ - GET the url - using an AJAX request
+// ✅loop through the array of data
+// forEach - failing
+// ✅jquery's .each()
+// while, do while, for loops, .map()
+//  get the actual names of the comments
+// ✅.done() method -- to capture the data when it's returned
+// append to element
+// select/find the element that we want to append to
+// create an element
+//
+
+$.get("https://jsonplaceholder.typicode.com/comments")
+    .done(function (data) {
+        console.log(data); // --> confirm if it's an object or an array
+        // HERE WE HAVE ACCESS TO THE DATA RRETURNED
+
+        // loop through data returned (which I know is an array from
+        // console logging it)
+        $.each(data, function (i, comment) {
+            console.log(comment.name); // ✅
+            // "this " + myVariiable + " is a number."
+            // `this ${myVariable} is a number`
+            let newEl = `<h1> ${comment.name} </h1>`
+
+            // select element we're appending to,
+            // append going to add whatever we pass in as child
+            // elements to the element selected
+            $(".container").append(newEl);
+
+            // MORE SECURE
+            // let newEl = document.createElement("h1");
+            // let name = comment.name;
+            // newEl.innerHTML = name;
+            // $(".container").append(newEl);
+        })
+    })
+
+// forEach --> doesn't return anything it just changes the original array
+// map() -> returns a new array
+// $.each(data, function(iterator, el){}) -- jquery's for each loop
+
+// template literals vs concatenation
+// let myVar = 18;
+// console.log("this is my favorite number: " + myVar + "! what's yours?"); // concatenation
+// console.log(`this is my favorite number: ${myVar}! What's yours?`) // template literals
+
+
+//
+// .ajax(url, options) // by default - GET || specify the request TYPE
+// in the options
+// .get(url) --> GET only
+// .post(url, options) // --. POST request only
+
+
+
+
+
+
+
