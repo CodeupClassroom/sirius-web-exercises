@@ -124,6 +124,26 @@ fetch('https://codeup-json-server.glitch.me/movies', {
 
 
 
+// ~~~~~~~~~~~~~~~~~~~~~`
+
+
+// DELETING A SPECIFIC MOVIE
+
+// unique id of the thing we're deleting
+// how user is going to delete -- > button to click on
+// button event listener
+// on event trigger --> delete from API
+// delete from API --> FETCH DELETE REQUEST
+// -- what does that fetch delete request require?
+// where is the data located? --> url
+// unique id of the thing we're deleting --> end of url after endpoints
+// options (2nd parameter)
+// // method type: DELETE
+// before the fetch method --> grab the id of the movie that's being
+// clicked on  // data-id (attribute)
+
+
+
 
 
 
